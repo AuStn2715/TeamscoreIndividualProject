@@ -28,7 +28,7 @@ public class Section {
     private int reportDurationLimit;
 
     @Getter
-    private ArrayList<Report> reports;
+    private ArrayList<Report> reports = new ArrayList<Report>();
     public void addReport(Report report){
         reports.add(report);
     }

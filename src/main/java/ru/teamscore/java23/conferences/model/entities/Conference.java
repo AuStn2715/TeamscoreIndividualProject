@@ -17,7 +17,12 @@ public class Conference {
         eventOrganizer = copyOf.getEventOrganizer();
         sections = new ArrayList<>();
         sections.addAll(copyOf.getSections());
-
+    }
+    // конференция должна иметь название и организатора
+    // даже если фактического организатора ещё нет - кто-то должен считаться ответственным по его поиску
+    public Conference(@NotNull String title, @NotNull String eventOrganizer){
+        this.title = title;
+        this.eventOrganizer = eventOrganizer;
     }
 
     @Setter @Getter
@@ -28,11 +33,14 @@ public class Conference {
     private String eventOrganizer;
 
     @Getter
-    private ArrayList<Section> sections;
+    private ArrayList<Section> sections = new ArrayList<Section>();
     public void addSection(Section section){
         sections.add(section);
     }
     public void removeSection(Section section){
         sections.remove(section);
+    }
+    public int getSectionsCount(){
+        return sections.size();
     }
 }

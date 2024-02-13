@@ -31,4 +31,16 @@ public class ConferenceTest {
         Assertions.assertEquals("организатор1", conference2.getEventOrganizer());
         Assertions.assertTrue(conference2.getSections().contains(section1));
     }
+    @Test
+    void sectionsCountTest(){
+        var title = "название1";
+        var eventOrganizer = "организатор1";
+
+        var conference1 = new Conference(title, eventOrganizer);
+        Assertions.assertEquals(0, conference1.getSectionsCount());
+
+        var section1 = new Section("секция1","модератор1");
+        conference1.addSection(section1);
+        Assertions.assertEquals(1, conference1.getSectionsCount());
+    }
 }
