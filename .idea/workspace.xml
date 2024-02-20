@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b844526-ab03-477a-8a05-06cb5c216526" name="Changes" comment="сущностные классы и тесты на глубокое копирование конференций.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="bd_scripts" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;model&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "model",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alexandr\IdeaProjects\Java23.IndividualProject.Conferences\src\main\java\ru\teamscore\java23\conferences\model" />
@@ -105,22 +101,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Java23.IndividualProject.Conferences" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Java23.IndividualProject.Conferences" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ConferenceInfoManagerTest.countTest" />
+        <item itemvalue="JUnit.ConferenceTest.sectionsCountTest" />
+        <item itemvalue="JUnit.ConferenceTest.deepCopyTest" />
         <item itemvalue="JUnit.ConferenceTest.sectionsCountTest" />
         <item itemvalue="JUnit.ConferenceTest.deepCopyTest" />
       </list>
@@ -162,10 +147,21 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="первый коммит" />
     <MESSAGE value="структура папок и первый сущностный класс" />
     <MESSAGE value="сущностные классы и тесты на глубокое копирование конференций." />
-    <option name="LAST_COMMIT_MESSAGE" value="сущностные классы и тесты на глубокое копирование конференций." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

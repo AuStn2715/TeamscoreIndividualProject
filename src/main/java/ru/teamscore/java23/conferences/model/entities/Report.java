@@ -32,7 +32,7 @@ public class Report {
 
     @Getter
     private String annotation;
-    private final int ANNOTATION_LENGTH_LIMIT = 1000;
+    public static final int ANNOTATION_LENGTH_LIMIT = 1000;
     /* по хорошему стоило бы кинуть exeption на случай когда в куче записываемых докладов один не влезет и нам придётся
     теперь его искать чтобы исправить ошибку. Но аннотация не имеет значения для кода, так что просто поставим
     ограничение и сделаем своё универсальное решение проблемы - удаление лишних символов

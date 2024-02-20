@@ -41,10 +41,12 @@ public class ConferenceInfoManagerTest {
         conference.addSection(section1);
         conference.addSection(section2);
 
+        ConferenceInfoManager Cim = new ConferenceInfoManager(conference);
 
-        Assertions.assertEquals(2, ConferenceInfoManager.getSectionsCount(conference));
-        Assertions.assertEquals(3, ConferenceInfoManager.getAuthorsCount(conference));
-        Assertions.assertEquals(2, ConferenceInfoManager.getOrganizationsCount(conference));
-        Assertions.assertEquals(2, ConferenceInfoManager.getReportsCount(conference));
+
+        Assertions.assertEquals(2, Cim.getSectionsCount());
+        Assertions.assertEquals(3, Cim.getAuthorsCount());
+        Assertions.assertEquals(2, Cim.getOrganizationsCount());
+        Assertions.assertEquals(2, Cim.getReportsCount());
     }
 }

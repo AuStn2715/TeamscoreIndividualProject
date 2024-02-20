@@ -2,45 +2,38 @@ package ru.teamscore.java23.conferences.model.managers;
 
 import ru.teamscore.java23.conferences.model.entities.Author;
 import ru.teamscore.java23.conferences.model.entities.Conference;
-import ru.teamscore.java23.conferences.model.entities.Report;
 import ru.teamscore.java23.conferences.model.entities.Section;
 
-import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ConferenceInfoManager {
-    private ConferenceInfoManager(){} // на текущий момент класс предполагается как набор статических методов, мне не нужен конструктор
 
-    public static int getOrganizationsCount(Conference conference) {
-        ArrayList<String> organizations = new ArrayList<>();
-        for (Section section : conference.getSections()){
-            for(Report report : section.getReports()){
-                for(Author author : report.getAuthors()){
-                    String organization = author.getOrganization();
-                    if(!organizations.contains(organization)){
-                        organizations.add(organization);
-                    }
-                }
-            }
-        }
-        return organizations.size();
+    public ConferenceInfoManager(Conference conference){
+        this.conference = conference;
     }
 
-    public static int getAuthorsCount(Conference conference) {
-        ArrayList<Author> authors = new ArrayList<>();
+    Conference conference;
 
-        for (Section section : conference.getSections()){
-            for(Report report : section.getReports()){
-                for(Author author : report.getAuthors()){
-                    if(!authors.contains(author)){
-                        authors.add(author);
-                    }
-                }
-            }
-        }
+    public int getOrganizationsCount() {
 
-        return authors.size();
+        return conference.getSections().stream()
+                .flatMap(section -> section.getReports().stream()
+                .flatMap(report -> report.getAuthors().stream()))
+                .map(Author::getOrganization)
+                .map(String::new)
+                .collect(Collectors.toSet())
+                .size();
     }
-    public static int getReportsCount(Conference conference){
+
+    public int getAuthorsCount() {
+        return (int) conference.getSections().stream()
+                .flatMap(section -> section.getReports().stream()
+                .flatMap(report -> report.getAuthors().stream()))
+                .distinct()
+                .count();
+    }
+    public int getReportsCount(){
         int count = 0;
         for (Section section : conference.getSections()){
             count += section.getReports().size();
@@ -51,10 +44,10 @@ public class ConferenceInfoManager {
     // функционал прописан в самой конференции, потому что секции содержатся в её поле
     // и благодаря ломбоку класс не особо перегружен
     // но если кто-то попытается вызвать методы через менеджер - они тут есть
-    public static ArrayList<Section> getSections(Conference conference){
+    public ArrayList<Section> getSections(){
         return conference.getSections();
     }
-    public static int getSectionsCount(Conference conference){
+    public int getSectionsCount(){
         return conference.getSectionsCount();
     }
 }
