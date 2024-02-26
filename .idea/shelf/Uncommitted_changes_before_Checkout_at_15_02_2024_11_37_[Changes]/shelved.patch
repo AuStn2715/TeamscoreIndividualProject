@@ -1,0 +1,82 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1b844526-ab03-477a-8a05-06cb5c216526\" name=\"Changes\" comment=\"сущностные классы и тесты на глубокое копирование конференций.\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManager.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManagerTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2c2b1KYtuj2FyYsQZLKYhewIGjO\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;model&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Alexandr\\IdeaProjects\\Java23.IndividualProject.Conferences\\src\\main\\java\\ru\\teamscore\\java23\\conferences\\model\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.ConferenceInfoManagerTest.countTest\">\r\n    <configuration name=\"ConferenceInfoManagerTest.countTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"conferences\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"ru.teamscore.java23.conferences.model.managers.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"ru.teamscore.java23.conferences.model.managers\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ru.teamscore.java23.conferences.model.managers.ConferenceInfoManagerTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"countTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ConferenceTest.deepCopyTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"conferences\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"ru.teamscore.java23.conferences.model.entities.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"ru.teamscore.java23.conferences.model.entities\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ru.teamscore.java23.conferences.model.entities.ConferenceTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"deepCopyTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ConferenceTest.sectionsCountTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"conferences\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"ru.teamscore.java23.conferences.model.entities.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"ru.teamscore.java23.conferences.model.entities\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ru.teamscore.java23.conferences.model.entities.ConferenceTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"sectionsCountTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Java23.IndividualProject.Conferences\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Java23.IndividualProject.Conferences\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.ConferenceInfoManagerTest.countTest\" />\r\n        <item itemvalue=\"JUnit.ConferenceTest.sectionsCountTest\" />\r\n        <item itemvalue=\"JUnit.ConferenceTest.deepCopyTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1b844526-ab03-477a-8a05-06cb5c216526\" name=\"Changes\" comment=\"\" />\r\n      <created>1707312408020</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1707312408020</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"первый коммит\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707312964368</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707312964368</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"структура папок и первый сущностный класс\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707316079203</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707316079203</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"сущностные классы и тесты на глубокое копирование конференций.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707747569094</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707747569094</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"первый коммит\" />\r\n    <MESSAGE value=\"структура папок и первый сущностный класс\" />\r\n    <MESSAGE value=\"сущностные классы и тесты на глубокое копирование конференций.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"сущностные классы и тесты на глубокое копирование конференций.\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,15 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1b844526-ab03-477a-8a05-06cb5c216526" name="Changes" comment="сущностные классы и тесты на глубокое копирование конференций.">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManager.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManagerTest.java" afterDir="false" />
++    <list default="true" id="1b844526-ab03-477a-8a05-06cb5c216526" name="Changes" comment="Класс, подсчитывающий количество авторов, докладов и секций">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -29,7 +22,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="model" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -43,14 +36,14 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;model&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "bd__scripts",
++    "settings.editor.selected.configurable": "preferences.pluginManager"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\Alexandr\IdeaProjects\Java23.IndividualProject.Conferences\src\main\java\ru\teamscore\java23\conferences\model" />
+@@ -159,13 +152,22 @@
+       <option name="project" value="LOCAL" />
+       <updated>1707747569094</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Класс, подсчитывающий количество авторов, докладов и секций">
++      <option name="closed" value="true" />
++      <created>1707827355635</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1707827355635</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="первый коммит" />
+     <MESSAGE value="структура папок и первый сущностный класс" />
+     <MESSAGE value="сущностные классы и тесты на глубокое копирование конференций." />
+-    <option name="LAST_COMMIT_MESSAGE" value="сущностные классы и тесты на глубокое копирование конференций." />
++    <MESSAGE value="Класс, подсчитывающий количество авторов, докладов и секций" />
++    <option name="LAST_COMMIT_MESSAGE" value="Класс, подсчитывающий количество авторов, докладов и секций" />
+   </component>
+ </project>
+\ No newline at end of file
