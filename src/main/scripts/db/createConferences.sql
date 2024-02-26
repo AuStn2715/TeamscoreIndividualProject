@@ -10,6 +10,7 @@ create table "conferences"."conference" (
 
 create table "conferences"."section" (
     "id" bigserial primary key,
+    "conference_id" bigint,
     "title" text,
     "venue" text,
     "moderator" text,
@@ -35,7 +36,7 @@ create table "conferences"."report" (
 );
 
 --только для разбиения связи "многие ко многим"
-create table "conferences"."report_authors" (
+create table "conferences"."report_author" (
 	"report_id" bigint,
 	"author_id" bigint,
 

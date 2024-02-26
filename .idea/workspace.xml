@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b844526-ab03-477a-8a05-06cb5c216526" name="Changes" comment="сущностные классы и тесты на глубокое копирование конференций.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/managers/ConferenceInfoManagerTest.java" afterDir="false" />
+    <list default="true" id="1b844526-ab03-477a-8a05-06cb5c216526" name="Changes" comment="Первый комит с намеченными но не заполненными таблицами">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Conference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/teamscore/java23/conferences/model/entities/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/teamscore/java23/conferences/model/entities/ConferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scripts/db/createConferences.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scripts/db/createConferences.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scripts/db/insertTestData.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scripts/db/insertTestData.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="model" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,7 +42,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;model&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;bd__scripts&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -120,9 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConferenceInfoManagerTest.countTest" />
         <item itemvalue="JUnit.ConferenceTest.sectionsCountTest" />
         <item itemvalue="JUnit.ConferenceTest.deepCopyTest" />
+        <item itemvalue="JUnit.ConferenceInfoManagerTest.countTest" />
+        <item itemvalue="JUnit.ConferenceInfoManagerTest.countTest" />
+        <item itemvalue="JUnit.ConferenceTest.sectionsCountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,13 +156,22 @@
       <option name="project" value="LOCAL" />
       <updated>1707747569094</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Первый комит с намеченными но не заполненными таблицами">
+      <option name="closed" value="true" />
+      <created>1708948440938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708948440938</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="первый коммит" />
     <MESSAGE value="структура папок и первый сущностный класс" />
     <MESSAGE value="сущностные классы и тесты на глубокое копирование конференций." />
-    <option name="LAST_COMMIT_MESSAGE" value="сущностные классы и тесты на глубокое копирование конференций." />
+    <MESSAGE value="Первый комит с намеченными но не заполненными таблицами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первый комит с намеченными но не заполненными таблицами" />
   </component>
 </project>
