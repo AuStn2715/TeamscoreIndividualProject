@@ -21,6 +21,7 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Getter
     @ManyToMany(mappedBy="authors")
     private ArrayList<Report> reports = new ArrayList<>();
 

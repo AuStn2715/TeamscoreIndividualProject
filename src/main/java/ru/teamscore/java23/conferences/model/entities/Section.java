@@ -1,10 +1,7 @@
 package ru.teamscore.java23.conferences.model.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -51,12 +48,14 @@ public class Section {
     @Column(name = "report_duration_limit", columnDefinition = "int")
     private int reportDurationLimit;
 
-    @Getter @OneToMany
+    @Getter @OneToMany(mappedBy = "section", cascade = CascadeType.ALL, orphanRemoval = true)
     private ArrayList<Report> reports = new ArrayList<Report>();
-    public void addReport(Report report){
+    public void addReport(@NonNull Report report){
+        report.setSection(this);
         reports.add(report);
     }
-    public void removeReport(Report report){
+    public void removeReport(@NonNull Report report){
+        report.setSection(null);
         reports.remove(report);
     }
 }

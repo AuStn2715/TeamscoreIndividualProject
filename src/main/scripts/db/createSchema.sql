@@ -1,12 +1,13 @@
 create schema if not exists "conferences";
 create schema if not exists "authors";
 
-drop table if exists "conferences"."coference";
-drop table if exists "conferences"."section";
-drop table if exists "conferences"."report";
-drop table if exists "authors"."author";
+drop table if exists "conferences"."conference" CASCADE;
+drop table if exists "conferences"."section" CASCADE;
+drop table if exists "conferences"."report" CASCADE;
+drop table if exists "authors"."author" CASCADE;
+drop table if exists "conferences"."report_author" CASCADE;
 
-create table "conferences"."coference" (
+create table "conferences"."conference" (
 	"id" bigserial primary key,
 	"title" text not null,
 	"event_date" date,
@@ -22,7 +23,7 @@ create table "conferences"."section" (
     "report_duration_limit" int,
     "conference_id" bigint,
     foreign key ("conference_id")
-    		references "conferences"."coference"("id")
+    		references "conferences"."conference"("id")
     		on delete cascade
 );
 
@@ -30,7 +31,7 @@ create table "conferences"."report" (
     "id" bigserial primary key,
     "section_id" bigint,
     "theme" text not null,
-    "annotation" varchar(1000)
+    "annotation" varchar(1000),
 
     foreign key ("section_id")
         		references "conferences"."section"("id")
@@ -51,7 +52,7 @@ create table "conferences"."report_author" (
     "author_id" bigint,
 
     foreign key ("report_id")
-    		references "confereces"."report"("id")
+    		references "conferences"."report"("id")
     		on delete cascade,
     	foreign key ("author_id")
     		references "authors"."author"("id")

@@ -42,12 +42,14 @@ public class Conference {
     @Column(name = "event_organizer", columnDefinition = "text")
     private String eventOrganizer;
 
-    @Getter @OneToMany
+    @Setter @Getter @OneToMany(mappedBy = "conference", cascade = CascadeType.ALL, orphanRemoval = true)
     private ArrayList<Section> sections = new ArrayList<Section>();
-    public void addSection(Section section){
+    public void addSection(@NonNull Section section){
+        section.setConference(this);
         sections.add(section);
     }
-    public void removeSection(Section section){
+    public void removeSection(@NonNull Section section){
+        section.setConference(null);
         sections.remove(section);
     }
     public int getSectionsCount(){

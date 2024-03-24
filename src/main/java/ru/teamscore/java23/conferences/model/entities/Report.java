@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @Table(name = "report", schema = "conferences")
 public class Report {
     // доклада без темы и хотя бы одного автора не может быть
-    public Report(String theme, ArrayList<Author> authors, String annotation){
+    public Report(@NonNull String theme, @NonNull ArrayList<Author> authors, String annotation){
         this(theme,authors);
         this.setAnnotation(annotation);
     }
@@ -22,7 +22,7 @@ public class Report {
 
     @Getter
     @Id
-    @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Getter @Setter
@@ -34,10 +34,19 @@ public class Report {
     @Column(columnDefinition = "text")
     private String theme;
 
-    @ManyToMany
-    @JoinTable(name="author", schema = "authors")
+    @Getter
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name="report_author", schema = "conferences",
+            joinColumns = { @JoinColumn(name = "report_id") },
+            inverseJoinColumns = { @JoinColumn(name = "author_id") }
+    )
     private ArrayList<Author> authors = new ArrayList<>();
+
     public void addAuthor(Author author){
+        if (authors.contains(author)) {
+            return;
+        }
         authors.add(author);
     }
     public void removeAuthor(Author author){
