@@ -18,7 +18,7 @@ public class ConferenceTest {
         var sections = new ArrayList<Section>();
         sections.add(section1);
         sections.add(section2);
-        var conference1 = new Conference(title, eventDate, eventOrganizer, sections);
+        var conference1 = new Conference(1, title, eventDate, eventOrganizer, sections);
         var conference2 = new Conference(conference1);
 
         conference1.setTitle("название1 изменено");
